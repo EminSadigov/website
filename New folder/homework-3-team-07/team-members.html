@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Team07 | About Us</title>
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">  
+        <script type="text/javascript" src="scripts.js"></script> 
+        <nav id="navigation">
+            <a class="main" href="index.html"><strong>Introduction</strong></a>
+            <a class="main" href="team-members.html"><strong>About Us</strong></a>
+            <a class="main" href="hour-of-code.html"><strong>Hour of Code</strong></a>
+            <a class="main" href="logic-gates.html"><strong>Logic Gates</strong></a>
+            <a class="main" href="web-project.html"><strong>Web Project</strong></a>
+            <a class="main" href="code-artist.html"><strong>Code Art</strong></a>
+            <a href="https://www.ada.edu.az/en" target="_blank"><img class = "logo"src="media/ada_logo_color.png" id="ADA logo" ></a> 
+            
+        </nav>     
+    </head>
+    <body>
+        <script type="text/javascript">
+            let logo = document.getElementById("ADA logo"); //Adding alert about changing websites
+     
+            logo.addEventListener("click", function () {
+            let confirmation = confirm("You are about to be redirected to an external website. Do you wish to continue?");
+            if (confirmation) {
+                GotoADA = "https://www.ada.edu.az/en";
+            } else {
+                event.preventDefault();
+            }
+            });
+            </script>
+        <div id="header"><h1>Team 07</h1><hr /></div>
+
+        <img id="abouremin" class="imginabout" style= "border: 2px solid #FFFFFF; padding: 8px"src="EminProfile.jpg"/>
+        <h2 style="position: absolute; left: 400px; top: 200px;">Emin Sadigov</h2>
+        <br/>
+        <P style="position: absolute; left: 425px;top: 260px;">Major: Information Technologies<br/><br/>Enrolled ADA: 2023<br/><br/>Date of Birth: 26.07.2006<br/><br/> Mail Address: esadigov20541@ada.edu.az</P>
+
+
+        
+        <img id="aboutmirkamal"  class="imginabout" style="position: absolute; top: 670px;  border: 2px solid #FFFFFF; padding: 8px" src="Mirkamalprofile.jpg"/>
+        <h2 style="position: absolute; left: 400px; top: 670px;">Mirkamal Asgarli</h2>
+        <br/>
+        <p style="position: absolute; left: 425px;top: 730px;">Major: Information Technologies<br><br>Enrolled ADA: 2024<br><br>Date of Birth: 07.04.2007<br><br> Mail Address: masgarli22963@ada.edu.az</P>
+
+        <img id="aboutfarah" class="imginabout" style="position: absolute; top: 1150px; border: 2px solid #FFFFFF; padding: 8px" src="86eae3d8abc2362ad6262916cb950640.jpg"/>
+        <h2 style="position: absolute; left: 400px; top: 1160px;">Farah Nematzada</h2> 
+        <br/> 
+        <P style="position: absolute; left: 425px; top: 1220px;">Major: Computer Science<br><br>Enrolled ADA: 2024<br><br>Date of Birth: 17.07.2007<br><br> Mail Address: fnematzada22949@ada.edu.az</P>
+        
+        <img id="aboutsarkhan" class="imginabout" style="position: absolute; top: 1630px;  border: 2px solid #FFFFFF; padding: 8px" src="linkedin_pp.jpeg"/>
+        <h2 style="position: absolute; left: 400px; top: 1640px;">Sarkhan Huseynov</h2> <br>
+        <P style="position: absolute; left: 425px; top: 1700px;">Major: Electric and Electronics Engineering<br><br>Enrolled ADA: 2024<br><br>Date of Birth: 15.11.2006<br><br> Mail Address: shuseynov22882@ada.edu.az</P>
+        
+       
+        </body>
+
+</html>

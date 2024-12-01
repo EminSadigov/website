@@ -1,0 +1,245 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+#navigation{
+    background-image: url(https://e0.pxfuel.com/wallpapers/422/349/desktop-wallpaper-programmer-s-life-developer-and-mobile-life-development-dark-developer.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: rgba(64, 129, 129, 0.696);
+    height:40px;
+    display: flex;
+    gap: 100px;
+    padding: 20px; 
+    align-items: center;
+    justify-content: left;
+    position: relative;
+}
+
+#header{
+    text-align: center;
+}
+
+#introtext{
+    margin: 0px;
+    background-color: rgb(255, 255, 255);
+}
+
+#navigation a.main:hover{
+    
+    opacity: 0.7;
+    height: 25px;
+    transform: scale(1.1);
+    
+    
+}
+#navigation a.main{
+    color: aliceblue;
+    text-decoration: none;
+    padding:5px 10px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.photomember{
+    
+    height: 210px;
+    width: 195px;
+    padding: 5px;
+    margin: 10px;
+    transition:transforms 0.3s;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    border-radius: 30px;
+    
+    
+}
+.photomember:hover {
+ 
+    transform: scale(1.1)
+    
+}
+
+.nameofmembers1{
+    
+    display: flex;
+    
+    position: absolute;
+    top: 550px;
+    gap: 110px;
+    left: 6%;
+    
+}
+
+.nameofmembers2{
+    position: absolute;
+    left: 66%;
+    display: flex;
+    gap: 100px;
+    top: 550px;
+    
+
+    
+}
+
+
+.picturesofmembers{
+    display: flex;
+    gap: 200px;
+    
+
+}
+.left-members {
+    margin-left: 50px; /* iki qrup sekiller arasindaki mesafe */
+}
+.right-members {
+    margin-left: 250px;
+
+}
+.logo{
+  height: 55px;
+  position:static;
+  right: 28px;
+  top: 15px;
+}
+.logo a:hover{
+    height: none;
+    transition:none;
+}
+#teamlogo img{
+    position:static;
+    top:15px;
+    right:38px;
+    height:80px;
+    
+}
+
+
+#teamname{
+    position: fixed;
+    right: 50px;
+    top: 6px;
+}
+
+/* 
+   ADA yazisinin linkinin rengleri
+*/
+.adahypertext {
+    color: rgba(223, 78, 78, 0.842);
+    text-decoration:none;
+}
+
+.adahypertext a:hover {
+    color: red;
+}
+.adahypertext a:visited {
+    color: rgb(130, 1, 130);
+}
+.adahypertext a:active {
+    color:green;
+}
+footer div{
+    background-image: url(https://e0.pxfuel.com/wallpapers/422/349/desktop-wallpaper-programmer-s-life-developer-and-mobile-life-development-dark-developer.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: rgb(64, 129, 129);
+    height: 150px;
+    color: aliceblue;
+
+}
+footer img{
+    height: 130px;
+    position: absolute;
+    left: 1000px;
+    top: 1250px;
+    margin: 05;
+    padding: 0%;
+
+
+}
+
+
+
+#hourofcode-listitems li {
+    font-family: "Gill Sans", sans-serif;
+    font-weight: bold;
+}
+
+.imginabout{
+    height: 350px;
+    width: 330px;
+    position: absolute;
+    top: 200px;
+    margin-left: 30px;
+    
+    padding: 30px;
+}
+
+
+
+
+
+#logicgates-text h4{
+    font-family: "Gill Sans", sans-serif;
+    
+}
+
+ body{
+    background-image: linear-gradient(rgba(58, 55, 55, 0.326), rgba(78, 74, 74, 0.364)),url("https://e0.pxfuel.com/wallpapers/398/350/desktop-wallpaper-nillia-webdesign-web-development-management.jpg");
+    background-size: cover;
+    background-position: center;
+ 
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    
+    color: white;
+}
+#codeacademylinks{
+    color: rgba(38, 242, 225, 0.59);
+    text-decoration: none;
+}
+
+.toolsphotos{ 
+    
+
+   
+}
+.toolsphotos:hover{
+    transform: scale(1.1);
+    
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+#htmlphoto{
+
+   
+    left:1px;
+
+}
+
+#cssphoto{
+    height: 210px;
+    position:absolute;
+    top: 507px;
+    left: 270px;
+
+}
+#javascriptphoto{
+    height: 270px;
+    left: 345px;
+    top: 473px;
+}
+#vscodephoto{
+    height: 240px;
+    left: 270px;
+}
+
+h2, h3, h4 {
+    font-family:"Gill Sans", sans-serif;
+}
+
+
