@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html >
+    <head>
+        <title> Team07 | Web-Project</title>
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">  
+        <script type="text/javascript" src="scripts.js"></script> 
+        <nav id="navigation">
+            <a class="main" href="index.html"><strong>Introduction</strong></a>
+            <a class="main" href="team-members.html"><strong>About Us</strong></a>
+            <a class="main" href="hour-of-code.html"><strong>Hour of Code</strong></a>
+            <a class="main" href="logic-gates.html"><strong>Logic Gates</strong></a>
+            <a class="main" href="web-project.html"><strong>Web Project</strong></a>
+            <a class="main" href="code-artist.html"><strong>Code Art</strong></a>
+            <a  href="https://www.ada.edu.az/en" target="_blank"><img class = "logo"src="media/ada_logo_color.png" id="ADA logo" ></a> 
+        </nav>   
+    <body id="web-project">
+         <script type="text/javascript">
+           let logo = document.getElementById("ADA logo"); //Adding alert about changing websites
+    
+           logo.addEventListener("click", function () {
+           let confirmation = confirm("You are about to be redirected to an external website. Do you wish to continue?");
+           if (confirmation) {
+               GotoADA = "https://www.ada.edu.az/en";
+           } else {
+               event.preventDefault();
+           }
+           });
+           </script>
+        <h1 id="header"> Web Project </h1><hr/>
+        <h2 style="margin-left:19px ;display: inline;">Code Academy profile links: </h2> <p style="display: inline;"> (You can watch our progress on Code Academy by just clicking our names below)</p>
+        <ul style="margin-left: 24px;">
+            <a id="codeacademylinks" target="_blank" href="https://www.codecademy.com/profiles/EminSadigov"><li>Emin's profile</li></a><br>
+            <a id="codeacademylinks" target="_blank" href="https://www.codecademy.com/profiles/MirkamalAsgarli"><li>Mirkamal's profile</li></a><br>
+            <a id="codeacademylinks" target="_blank" href="https://www.codecademy.com/profiles/SarkhanHuseynov"><li>Sarkhan's profile</li></a><br>
+            <a id="codeacademylinks" target="_blank" href="https://www.codecademy.com/profiles/fnematzada"><li>Farah's profile</li></a><br>
+
+        </ul><hr/>
+        <h3 style="margin-left: 19px; text-align: center;"> While Creating this website we have used these tools...</h3>
+        <img class="toolsphotos" id="htmlphoto" src="./htmllogo.png" alt="htmllogo"/>
+        <img class="toolsphotos" id="cssphoto" src="./csslogo.png" alt="csslogo"/>
+        <img class="toolsphotos" id="javascriptphoto" src="./javascriptlogo.png" alt="javascriptlogo"/>
+        <img class="toolsphotos" id="vscodephoto" src="./vscode.png" alt="vscodephoto"/>
+        <h3 style="text-align: center;">These are the additional tools that help us work together:</h3>
+        <img class="toolsphotos" style="height: 240px;" src="./github.png" alt="githublogo"/> 
+        <img class="toolsphotos" style="height: 240px;  " src="gitlogo.png"/>
+        <hr/>
+        <h3 style="text-align: center;"> Here you can read a report about how we started to create this website:</h3>
+        <br>
+        <div>
+            <p>The web project was the best group work we ever had, even funnier than our lab adventures. In this project, as a team, we felt we were learning better by applying the rules we learned during previous classes. Although the team had a lot of difficulties, such as learning the GitHub system and writing code without causing any errors, our passion and inspiration made us do more and more. Now, let's get into details to see which problems and interesting experiences we had!
+            </p>
+            <br>
+            <h3>Preparation time: 
+            </h3>
+            <p>As always, Sarkhan sent the introduction pdf to our group chat. To be honest, the idea of creating a website from scratch was making us nervous. However, there is no way home for us since we are all veterans of ADA University. After reading the instructions, we all downloaded VS code, and Emin created Team 07 on GitHub. The team was only able to meet on 25 November. In this meeting, we all made sure that we could use VS code and GitHub at the same time. Then, Farah recommended using GitHub Desktop instead of the website. After some practice, we realized that it was quite easy. We all downloaded GitHub desktop. It was our time to shine.
+            </p>
+            <br>
+            <h3>Coding section:
+            </h3>
+            <p>Firstly, we divided our work among each other. Emin was responsible for giving a general layout and coding CSS. Mirkamal was writing the context of all sub-pages inside the web. Farah and Sarkhan were working together to solve some problems that might appear. Our first days were hard, but as time passed, we figured everything out.
+            </p>
+            <p>To begin, Mirkamal created new sub-pages for the website, such as Logic Gates. The reason was that we wanted to see all of our projects as distinct subpages. After that, he started to add texts. He was using the previous reports of projects, and he created a new report for the web. Meanwhile, Emin was designing pages and inserting logos to the webpage. Then, Sarkhan continued with solving other issues. The unexpected visual problems in designs were the hardest parts of this project. After having all HTML codes, members started to design the page by changing the font of the heading, adding some dynamic effects with JS, and improving the CSS code. After finishing all, Farah started to create the "Code Art." That is all; we are done for now. </p>
+            <br>
+            <h3>The End:</h3>
+            <p>As a wise man once said, all good things must come to an end. This project was the funniest one so far. As team members, we enjoyed each steps of web-building. Special thanks to ADA University and Araz müəllim for providing this opportunity to us.</p>
+        </div>
+
+    </body>
+</html>

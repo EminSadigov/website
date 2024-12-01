@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!-- 
+    SITE 1101 Principles of Information Systems 
+    (c)202X by Name Surname 
+    Submitted in partial fulfillment of the requirements of the course.
+-->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Team07 | Code Art</title>
+        <link rel="stylesheet" href="styles.css">
+        <nav id="navigation">
+            <a class="main" href="index.html"><strong>Introduction</strong></a>
+            <a class="main" href="team-members.html"><strong>About Us</strong></a>
+            <a class="main" href="hour-of-code.html"><strong>Hour of Code</strong></a>
+            <a class="main" href="logic-gates.html"><strong>Logic Gates</strong></a>
+            <a class="main" href="web-project.html"><strong>Web Project</strong></a>
+            <a class="main" href="code-artist.html"><strong>Code Art</strong></a>
+            <a href="https://www.ada.edu.az/en" target="_blank">
+                <img class="logo" src="media/ada_logo_color.png" id="ADA-logo" alt="ADA University Logo">
+            </a>
+        </nav>
+    </head>
+    <body>
+        <h3 style="text-align: center;">What is Code Art? Watch this video for the explanation:</h3>
+        <div style="text-align: left; margin: 20px;">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/MUavAHn-QUg?si=JKi9DuJyXPfqaJh2" 
+                    title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen></iframe>
+        </div>
+
+        <h3 style="text-align: left;">Look at this cute guy! What is he doing here?</h3>
+        <div style="text-align: left;">
+            <img src="media/artist.png" alt="Cute artist character" style="margin: 10px;">
+            <p>"Hi, I'm an artist. You can write code to make me draw almost anything."</p>
+        </div>
+
+        <div style="text-align: center;">
+            <button id="myButton" style="display: block; margin: 20px auto;">Draw Art</button>
+            <canvas id="art-canvas" width="500" height="500" style="margin-top: 20px;"></canvas>
+        </div>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                // Logo Redirection
+                const logo = document.getElementById("ADA-logo");
+                logo.addEventListener("click", function (event) {
+                    const confirmation = confirm("You are about to be redirected to an external website. Do you wish to continue?");
+                    if (!confirmation) {
+                        event.preventDefault();
+                    }
+                });
+
+                const canvas = document.getElementById("art-canvas");
+                const context = canvas.getContext("2d");
+                let currentX = canvas.width / 2;
+                let currentY = canvas.height / 2;
+                let currentAngle = 270 * (Math.PI / 180);
+
+                document.getElementById("myButton").addEventListener("click", function () {
+                    drawArt();
+                });
+
+                function drawArt() {
+                    penColour('#0000cd');// Set pen color to blue 
+                    globalAlpha(60); // Set transparency
+                    penWidth(1); // Set line width
+                    context.clearRect(0, 0, canvas.width, canvas.height); // Clear previous drawings
+
+                    
+                    for (let counter = 15; counter <= 300; counter += 2) {
+                        moveForward(counter);
+                        turnRight(72);
+                    }
+                }
+                function penColour(color) {
+                    context.strokeStyle = color;
+                }
+                function globalAlpha(alpha) {
+                    context.globalAlpha = alpha / 100;
+                }
+                function penWidth(width) {
+                    context.lineWidth = width;
+                }
+                function moveForward(distance) {
+                    context.beginPath();
+                    context.moveTo(currentX, currentY);
+                    currentX += distance * Math.cos(currentAngle);
+                    currentY += distance * Math.sin(currentAngle);
+                    context.lineTo(currentX, currentY);
+                    context.stroke();
+                }
+
+                function turnRight(angle) {
+                    currentAngle += angle * (Math.PI / 180);
+                }
+            });
+        </script>
+    </body>
+</html>

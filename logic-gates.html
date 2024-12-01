@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Team07 | Logic-Gates</title>
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">  
+        <script type="text/javascript" src="scripts.js"></script> 
+        <nav id="navigation">
+            <a class="main" href="index.html"><strong>Introduction</strong></a>
+            <a class="main" href="team-members.html"><strong>About Us</strong></a>
+            <a class="main" href="hour-of-code.html"><strong>Hour of Code</strong></a>
+            <a class="main" href="logic-gates.html"><strong>Logic Gates</strong></a>
+            <a class="main" href="web-project.html"><strong>Web Project</strong></a>
+            <a class="main" href="code-artist.html"><strong>Code Art</strong></a>
+            <a  href="https://www.ada.edu.az/en" target="_blank"><img class = "logo"src="media/ada_logo_color.png" id="ADA logo" ></a> 
+        </nav>     
+    </head>
+    <body>
+      <script type="text/javascript">
+        let logo = document.getElementById("ADA logo"); //Adding alert about changing websites
+ 
+        logo.addEventListener("click", function () {
+        let confirmation = confirm("You are about to be redirected to an external website. Do you wish to continue?");
+        if (confirmation) {
+            GotoADA = "https://www.ada.edu.az/en";
+        } else {
+            event.preventDefault();
+        }
+        });
+        </script>
+        <div id="header"><h1>Logic Gates</h1><hr /></div>
+        <div id="logicgates-text"><p style="margin-left: 10px;">In this page, you can read detailed report of lab visits and projects.</p>
+        <br><br>
+    <h3 style="margin-left: 38px;">NOT gate:</h3>
+    <ul style="margin-left: 35px;">
+        <li>Mirkamal attached all components (LED, resistors, transistors, cables, push buttons). However, the system did not work.</li>
+        <li>After some discussion, some issues were realised, such as wrong resistor choices, unproperly connected cables, and loose push button.</li>
+        <li>Team members corrected their mistakes. Fortunately, system worked. When push button is not pressed, the LED turns on, and when push button is pressed, the LED remains off.</li>
+        </ul>    
+     <br>
+    <h3 style="margin-left: 38px;">OR gate</h3>
+    <ul style="margin-left: 50 px">
+      <li>Sarkhan started to construct the system with the help of the provided examples in homework instruction.</li>
+      <li>After finishing, the first try was unsuccessful. So, Sarkhan analyzed the system carefully</li>
+      <li>First, Sarkhan thought the buttons were not properly fitting, and he reattached them. Suddenly, Emin realized that resistor of the LED was not going to positive side of the breadboard. After solving the problem, the OR gate started to work.
+      </li>
+        <br><br>
+     </ul>
+     <br>
+    <h3 style="margin-left: 38px;">AND gate</h3>
+     <ul style="margin-left: 35;">
+        <li>Emin and Farah started to construct the system.</li>
+        <li>The team was a little experienced because of the previous mistakes.
+        </li>
+        <li>Emin made sure that previous mistakes were not replayed.
+        </li>
+        <li>At the end, Farah tried to turn the LED on but was unsuccessful. Interestingly, the LED lighted up before pressing the push buttons.</li>
+        <li>After some research, Farah realized cables between transistors were not actually connecting them, and resistor between the push button and transistor was not fitting well. Emin and Farah solved the current problem, but the LED did not light up.
+        </li>
+        <li>The team got some help from lab coordinater, and he said their push buttons were not vertically attached. However, after Farah reattached the push buttons, the system did not work out again. Then, the team decided to construct the system again.
+        </li>
+        <li>Emin and Farah disconnected everything and started from the beginning.</li>
+        <li>Before trying again, Sarkhan realized a problem with cables: 2 transistors were not connected.</li>
+        <li>After reconnecting the cables, the system worked fully.</li>
+
+        
+     </ul> </div>
+     <br><br><br>
+
+     <h3><strong>You can check videos below to see more details</strong></h3> 
+     <br>
+     <h4>Construction of Logic Gates:</h4>
+     <iframe 
+       width="560" 
+       height="315" 
+       src="https://www.youtube.com/embed/xWmbVcE04DA?si=1hTCx0Yu44jDrTIw" 
+       title="YouTube video player" 
+       frameborder="0" 
+       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+       referrerpolicy="strict-origin-when-cross-origin" 
+       allowfullscreen>
+    </iframe>
+
+    <br><br>
+
+    <h4>Construction of NAND Gate:</h4>
+    <iframe 
+      width="560" 
+      height="315" 
+      src="https://www.youtube.com/embed/iZ7Z3jj6ixs?si=eVaXkEJWu2Wz175S" 
+      title="YouTube video player" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+      referrerpolicy="strict-origin-when-cross-origin" 
+      allowfullscreen>
+    </iframe>
+
+     
+    </body>
+    
+
+</html>
